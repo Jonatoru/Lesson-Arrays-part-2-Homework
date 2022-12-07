@@ -28,6 +28,19 @@ public class Main {
 
         double averageAmount = sum / arr.length;
         System.out.println("Средняя сумма трат за месяц составила "+averageAmount+" рублей");
+
+        System.out.println("Задача 4");
+
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        int n = reverseFullName.length;
+        for (int i = 0; i < n/2; i++) {
+            char temp = reverseFullName[n-i-1];
+            reverseFullName[n-i-1] = reverseFullName[i];
+            reverseFullName[i] = temp;
+        }
+        for (int i=0; i<reverseFullName.length; i++){
+            System.out.print(reverseFullName[i]);
+        }
     }
 
     int[] arr = generateRandomArray();
