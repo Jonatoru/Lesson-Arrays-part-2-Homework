@@ -23,7 +23,13 @@ public class Main {
             }
         }
         System.out.println("Минимальная сумма трат за день составила "+minSpending+" рублей. Максимальная сумма трат за день составила "+maxSpending+" рублей.");
+
+        System.out.println("Задача 3");
+
+        double averageAmount = sum / arr.length;
+        System.out.println("Средняя сумма трат за месяц составила "+averageAmount+" рублей");
     }
+
     int[] arr = generateRandomArray();
 
     public static int[] generateRandomArray() {
