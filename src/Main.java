@@ -9,6 +9,20 @@ public class Main {
             sum += i;
         }
         System.out.println("Сумма трат за месяц составила "+sum+" рублей");
+
+        System.out.println("Задача 2");
+
+        int minSpending = 200_000;
+        int maxSpending = -1;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > maxSpending) {
+                maxSpending = arr[i];
+            }
+            if (minSpending > arr[i]) {
+                minSpending = arr[i];
+            }
+        }
+        System.out.println("Минимальная сумма трат за день составила "+minSpending+" рублей. Максимальная сумма трат за день составила "+maxSpending+" рублей.");
     }
     int[] arr = generateRandomArray();
 
