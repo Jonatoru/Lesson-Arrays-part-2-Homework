@@ -4,7 +4,7 @@ public class Main {
         System.out.println("Задача 1");
 
         int[] arr = generateRandomArray();
-        int sum = 0;
+        double sum = 0;
         for (int i:arr) {
             sum += i;
         }
@@ -12,8 +12,8 @@ public class Main {
 
         System.out.println("Задача 2");
 
-        int minSpending = 200_000;
-        int maxSpending = -1;
+        int minSpending = arr[0];
+        int maxSpending = arr[0];
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] > maxSpending) {
                 maxSpending = arr[i];
